@@ -4,7 +4,7 @@ const { Op } = require("sequelize");
 
 module.exports = async (req, res) => {
   const nameCourse = req.query.name_course || [];
-  const userId = req.query.user_ids || [];
+  const userId = req.query.user_id || [];
   const priceCourse = req.query.price_course || [];
   const typeCourse = req.query.type_course || [];
   const categoryCourse = req.query.category_course || [];

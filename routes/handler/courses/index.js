@@ -8,6 +8,9 @@ const getCategoryCourse = require('./getCategoryCourse')
 const populerCategoryCourse = require('./populerCategoryCourse')
 const detailCourse = require('./detailCourse')
 const searchCourse = require('./searchCourse')
+const sortHighPrice = require('./sortHighPrice')
+const sortLowPrice = require('./sortLowPrice')
+const getFreeCourse = require('./getFreeCourse')
 
 module.exports = {
   create,
@@ -18,5 +21,8 @@ module.exports = {
   populerCategoryCourse,
   getCourse,
   detailCourse,
-  searchCourse
+  searchCourse,
+  sortHighPrice,
+  sortLowPrice,
+  getFreeCourse
 }

@@ -17,5 +17,8 @@ router.get('/get-course', verifyToken, rolePermission('user'),  coursesHandler.g
 router.get('/category-course', verifyToken, rolePermission('user'),  coursesHandler.getCategoryCourse)
 router.get('/populer-category-course', verifyToken, rolePermission('user'),  coursesHandler.populerCategoryCourse)
 router.post('/search-course', verifyToken, rolePermission('user'),  coursesHandler.searchCourse)
+router.get('/sort-high-course', verifyToken, rolePermission('user'),  coursesHandler.sortHighPrice)
+router.get('/sort-low-course', verifyToken, rolePermission('user'),  coursesHandler.sortLowPrice)
+router.get('/get-free-course', verifyToken, rolePermission('user'),  coursesHandler.getFreeCourse)
 
 module.exports = router;
