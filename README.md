@@ -1,4 +1,4 @@
-## elemes_backend_coding_test ##
+## Elemes Backend Coding Test ##
 
 ****  Steps Installation ****
 1. git clone https://github.com/Yoga-Saputra/elemes_backend_coding_test.git
@@ -82,9 +82,3 @@
 21. GET, localhost:3000/courses/get-free-course => get free course
 - Note:
 - parameters on HEaders =  KEY: Authorization VALUE:token
-
-
-
-
-
-
