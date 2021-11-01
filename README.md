@@ -52,8 +52,36 @@
 - Note:
 - parameters on HEaders =  KEY: Authorization VALUE:token
 
+15. GET, localhost:3000/courses/populer-category-course => Get Populer Category Course
+- Note:
+- parameters on HEaders =  KEY: Authorization VALUE:token
 
+16. GET, localhost:3000/courses/get-course => Get Course
+- Note:
+- parameters on HEaders =  KEY: Authorization VALUE:token
 
+17. GET, localhost:3000/courses/detail-course/1 => Get Detail Course
+- Note:
+- parameters on HEaders =  KEY: Authorization VALUE:token
+
+18. POST, localhost:3000/courses/search-course => Search Course
+- Note:
+- parameters on HEaders =  KEY: Authorization VALUE:token
+- parameters on Params = KEY: name_course or user_id or price_course or type_course or category_course
+- type_course is enum = ['free', 'premium']
+- category_course is enum = ['all-level', 'beginner', 'intermediate', 'advance', 'populer']
+
+19. GET, localhost:3000/courses/sort-high-course => Sort High course
+- Note:
+- parameters on HEaders =  KEY: Authorization VALUE:token
+
+20. GET, localhost:3000/courses/sort-low-course => Sort Low course
+- Note:
+- parameters on HEaders =  KEY: Authorization VALUE:token
+
+21. GET, localhost:3000/courses/get-free-course => get free course
+- Note:
+- parameters on HEaders =  KEY: Authorization VALUE:token
 
 
 
