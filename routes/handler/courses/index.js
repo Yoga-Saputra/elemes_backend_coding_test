@@ -3,9 +3,18 @@ const update = require('./update')
 const getCount = require('./getCount')
 const deleteCourse = require('./deleteCourse')
 
+const getCourse = require('./getCourse')
+const getCategoryCourse = require('./getCategoryCourse')
+const populerCategoryCourse = require('./populerCategoryCourse')
+const detailCourse = require('./detailCourse')
+
 module.exports = {
   create,
   update,
   getCount,
-  deleteCourse
+  deleteCourse,
+  getCategoryCourse,
+  populerCategoryCourse,
+  getCourse,
+  detailCourse
 }

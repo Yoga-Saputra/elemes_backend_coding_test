@@ -8,11 +8,13 @@ const rolePermission = require('../middleware/rolePermission')
 // admin permission
 router.post('/create', verifyToken, rolePermission('admin'),  coursesHandler.create)
 router.put('/update/:id', verifyToken, rolePermission('admin'),  coursesHandler.update)
-router.get('/getTotal', verifyToken, rolePermission('admin'),  coursesHandler.getCount)
+router.get('/get-total', verifyToken, rolePermission('admin'),  coursesHandler.getCount)
 router.post('/delete/:id', verifyToken, rolePermission('admin'),  coursesHandler.deleteCourse);
 
 // user permission
-// get category course
-// router.get('/', verifyToken, rolePermission('admin'),  coursesHandler.getAllCourses)
+router.get('/detail-course/:id', verifyToken, rolePermission('user'),  coursesHandler.detailCourse)
+router.get('/get-course', verifyToken, rolePermission('user'),  coursesHandler.getCourse)
+router.get('/category-course', verifyToken, rolePermission('user'),  coursesHandler.getCategoryCourse)
+router.get('/populer-category-course', verifyToken, rolePermission('user'),  coursesHandler.populerCategoryCourse)
 
 module.exports = router;
