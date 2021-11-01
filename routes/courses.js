@@ -16,5 +16,6 @@ router.get('/detail-course/:id', verifyToken, rolePermission('user'),  coursesHa
 router.get('/get-course', verifyToken, rolePermission('user'),  coursesHandler.getCourse)
 router.get('/category-course', verifyToken, rolePermission('user'),  coursesHandler.getCategoryCourse)
 router.get('/populer-category-course', verifyToken, rolePermission('user'),  coursesHandler.populerCategoryCourse)
+router.post('/search-course', verifyToken, rolePermission('user'),  coursesHandler.searchCourse)
 
 module.exports = router;

@@ -3,7 +3,8 @@ const { Course } = require('../../../models');
 module.exports = async (req, res) => {
   const populerCategoryCourse =  await Course.findAll({
     where: {category: 'populer'},
-    attributes: ['category']
+    attributes: ['category'],
+    group: ['category']
   })
 
   return res.json({
